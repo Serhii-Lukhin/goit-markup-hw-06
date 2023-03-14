@@ -1,4 +1,4 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-Hometask 5
-https://serhii-lukhin.github.io/goit-markup-hw-05/
+Hometask 6
+https://serhii-lukhin.github.io/goit-markup-hw-06/
