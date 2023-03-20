@@ -452,17 +452,17 @@
     <!--Modal-->
     <div class="is-hidden my-modal-bg" data-modal>
       <div class="my-modal-form">
-        <div class="my-modal-close" data-modal-close>
-          <svg class="my-modal-close-svg" width="24" height="24">
+        <button class="my-modal-close" data-modal-close>
+          <svg class="my-modal-close-svg" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
-        </div>
+        </button>
         <p class="modal-text body-medium-text">
           Leave your contacts and we will call you back
         </p>
         <form name="user-form" autocomplete="on" novalidate class="main-form">
-          <lable class="my-modal-form-label"
-            ><p class="lable-title small-text subtle-text">Name</p>
+          <label class="my-modal-form-label"
+            ><span class="lable-title small-text subtle-text">Name</span>
             <input
               type="text"
               class="my-modal-form-input small-text"
@@ -472,10 +472,10 @@
             <svg width="18" height="24" class="icon-form">
               <use href="./images/symbol-defs.svg#icon-user"></use>
             </svg>
-          </lable>
+          </label>
 
-          <lable class="my-modal-form-label"
-            ><p class="lable-title small-text subtle-text">Phone</p>
+          <label class="my-modal-form-label"
+            ><span class="lable-title small-text subtle-text">Phone</span>
             <input
               type="tel"
               class="my-modal-form-input small-text"
@@ -484,10 +484,10 @@
             <svg width="18" height="24" class="icon-form">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
-          </lable>
+          </label>
 
-          <lable class="my-modal-form-label"
-            ><p class="lable-title small-text subtle-text">Email</p>
+          <label class="my-modal-form-label"
+            ><span class="lable-title small-text subtle-text">Email</span>
             <input
               type="email"
               class="my-modal-form-input small-text"
@@ -496,16 +496,16 @@
             <svg width="18" height="24" class="icon-form">
               <use href="./images/symbol-defs.svg#icon-mail"></use>
             </svg>
-          </lable>
+          </label>
 
-          <lable class="my-modal-form-label"
-            ><p class="lable-title small-text subtle-text">Comment</p>
+          <label class="my-modal-form-label"
+            ><span class="lable-title small-text subtle-text">Comment</span>
             <textarea
               class="my-modal-form-textarea small-text"
               name="user-comment"
               placeholder="Text input"
             ></textarea>
-          </lable>
+          </label>
 
           <label class="small-text my-modal-form-label-checkbox">
             <input
@@ -518,7 +518,11 @@
               <a href="#" class="link-text">Privacy Policy</a></span
             ></label
           >
-          <button type="submit" class="main-button form-button" id="">
+          <button
+            type="submit"
+            class="main-button form-button"
+            id="send-button"
+          >
             Send
           </button>
         </form>
